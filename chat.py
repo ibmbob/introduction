@@ -84,8 +84,7 @@ FAQ = [
     ),
     (
         r"リンク|link|一覧|list",
-        "IBM Quantum / Qiskit 関連リンク集は README.md にまとめてあります。\n"
-        "▶ https://github.com/ibmbob/introduction/blob/main/README.md",
+        "IBM Quantum / Qiskit 関連リンク集は README.md にまとめてあります。",
     ),
 ]
 
@@ -98,9 +97,8 @@ EXIT_PATTERNS = re.compile(
 
 
 def find_response(user_input: str) -> str:
-    text = user_input.lower()
     for pattern, response in FAQ:
-        if re.search(pattern, text, re.IGNORECASE):
+        if re.search(pattern, user_input, re.IGNORECASE):
             return response
     return (
         "申し訳ありませんが、その質問には答えられません。\n"
