@@ -1,6 +1,9 @@
 # IBM Quantum / Qiskit 関連リンク集
 IBM Quantum / Qiskit 関連の主要リンクを集めました。和訳されているものは日本語版にリンクしています。
 
+> **チャットボット / Chatbot**：リソースについて質問するには、ターミナルで `python3 chat.py` を実行してください。
+> To ask questions about these resources, run `python3 chat.py` in your terminal.
+
 <br>
 
 ## IBM Quantum Systemsで量子計算するツール
